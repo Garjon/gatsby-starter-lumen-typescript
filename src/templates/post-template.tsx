@@ -1,15 +1,14 @@
-// @flow strict
 import React from 'react';
 import { graphql } from 'gatsby';
 import Layout from '../components/Layout';
 import Post from '../components/Post';
 import { useSiteMetadata } from '../hooks';
-import type { MarkdownRemark } from '../types';
+import { MarkdownRemark } from '../types';
 
 type Props = {
   data: {
-    markdownRemark: MarkdownRemark
-  }
+    markdownRemark: MarkdownRemark;
+  };
 };
 
 const PostTemplate = ({ data }: Props) => {
@@ -19,7 +18,7 @@ const PostTemplate = ({ data }: Props) => {
   const metaDescription = postDescription !== null ? postDescription : siteSubtitle;
 
   return (
-    <Layout title={`${postTitle} - ${siteTitle}`} description={metaDescription} socialImage={socialImage} >
+    <Layout title={`${postTitle} - ${siteTitle}`} description={metaDescription} socialImage={socialImage}>
       <Post post={data.markdownRemark} />
     </Layout>
   );
