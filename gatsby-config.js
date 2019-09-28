@@ -15,6 +15,7 @@ module.exports = {
     author: siteConfig.author
   },
   plugins: [
+    'gatsby-plugin-typescript',
     {
       resolve: 'gatsby-source-filesystem',
       options: {
@@ -137,7 +138,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-netlify-cms',
       options: {
-        modulePath: `${__dirname}/src/cms/index.js`
+        modulePath: `${__dirname}/src/cms/index.ts`
       }
     },
     {
@@ -208,7 +209,6 @@ module.exports = {
     'gatsby-plugin-flow',
     'gatsby-plugin-optimize-svgs',
     'gatsby-plugin-offline',
-    'gatsby-plugin-react-helmet',
-    'gatsby-plugin-typescript'
+    'gatsby-plugin-react-helmet'
   ]
 };

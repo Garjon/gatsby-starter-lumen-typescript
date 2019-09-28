@@ -1,10 +1,9 @@
-// @flow strict
 import React from 'react';
-import type { Entry, WidgetFor } from '../../types';
+import { Entry, WidgetFor } from '../../types';
 
 type Props = {
-  entry: Entry,
-  widgetFor: WidgetFor
+  entry: Entry;
+  widgetFor: WidgetFor;
 };
 
 const PostPreview = ({ entry, widgetFor }: Props) => {
