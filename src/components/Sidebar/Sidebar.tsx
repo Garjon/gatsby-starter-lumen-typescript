@@ -1,4 +1,3 @@
-// @flow strict
 import React from 'react';
 import Author from './Author';
 import Contacts from './Contacts';
@@ -8,7 +7,7 @@ import styles from './Sidebar.module.scss';
 import { useSiteMetadata } from '../../hooks';
 
 type Props = {
-  isIndex?: boolean,
+  isIndex?: boolean;
 };
 
 const Sidebar = ({ isIndex }: Props) => {
