@@ -1,10 +1,9 @@
-// @flow strict
 import React from 'react';
 import styles from './Content.module.scss';
 
 type Props = {
-  body: string,
-  title: string
+  body: string;
+  title: string;
 };
 
 const Content = ({ body, title }: Props) => (
