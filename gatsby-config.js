@@ -1,7 +1,7 @@
 'use strict';
 
-const siteConfig = require('./config.js');
-const postCssPlugins = require('./postcss-config.js');
+const siteConfig = require('./config.ts');
+const postCssPlugins = require('./postcss-config.ts');
 
 module.exports = {
   pathPrefix: siteConfig.pathPrefix,
